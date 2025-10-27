@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ByteMinds - 公司主页</title>
+    <title>ByteMinds - 创新科技</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="ByteMinds Logo" class="logo-img">
             <h1>ByteMinds</h1>
-            <p>智慧与创新</p>
+            <p>创新与智能技术的领导者</p>
         </div>
         <nav>
             <ul>
@@ -24,41 +25,48 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="hero">
-            <h2>欢迎来到ByteMinds</h2>
-            <p>创新的软件解决方案，推动业务发展</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>欢迎来到 ByteMinds</h2>
+            <p>领先的软件解决方案，赋能企业与个人的数字化未来</p>
+            <a href="#about" class="btn-primary">了解更多</a>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <h2>关于我们</h2>
-        <p>ByteMinds致力于提供顶尖的定制软件开发服务。我们团队由经验丰富的程序员组成，专注于为各行各业提供技术支持。</p>
+        <p>ByteMinds 是一家致力于提供创新软件开发的公司。我们的目标是通过技术改变世界，帮助各行各业实现数字化转型。</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="services">
         <h2>我们的服务</h2>
-        <ul>
-            <li>定制软件开发</li>
-            <li>移动应用开发</li>
-            <li>系统集成</li>
-            <li>技术咨询</li>
-        </ul>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>定制软件开发</h3>
+                <p>根据客户需求，提供量身定制的解决方案。</p>
+            </div>
+            <div class="service-item">
+                <h3>移动应用开发</h3>
+                <p>开发高效且易用的移动应用，优化用户体验。</p>
+            </div>
+            <div class="service-item">
+                <h3>系统集成</h3>
+                <p>无缝集成各种系统，提升企业运营效率。</p>
+            </div>
+            <div class="service-item">
+                <h3>技术咨询</h3>
+                <p>为企业提供技术架构、战略规划等专业咨询服务。</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>联系我们</h2>
         <form action="#" method="POST">
-            <label for="name">姓名：</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">邮箱：</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">留言：</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">发送信息</button>
+            <input type="text" id="name" name="name" placeholder="姓名" required>
+            <input type="email" id="email" name="email" placeholder="邮箱" required>
+            <textarea id="message" name="message" placeholder="留言内容" required></textarea>
+            <button type="submit" class="btn-primary">发送信息</button>
         </form>
     </section>
 
