@@ -60,9 +60,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* 主页（Hero Section） */
+/* Hero Section */
 .hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background-image: url('images/hero-bg.jpg'); /* 确保路径正确 */
+    background-position: center;
+    background-size: cover;
     color: white;
     padding: 120px 20px;
     text-align: center;
